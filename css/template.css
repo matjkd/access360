@@ -1,0 +1,140 @@
+body{
+	
+	background:#000 url("/images/background.jpg") repeat-x;
+/*	font:normal 16px/24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+	font-weight: 300;*/
+	font:normal 14px/20px "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color:#393121;
+	padding: 0px 0 0 0;
+	margin:0px
+}
+#background_text {
+	background: url("/images/background_text.png") no-repeat center 50px;
+
+}
+
+img {
+	margin: 0px;
+	padding:0px;
+	border:0px;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: Georgia, serif;
+	font-weight: normal;
+	text-align: center;
+}
+
+h2 {
+	padding: 20px 0 0;
+	text-align: center;
+}
+
+p {
+	border: 1px solid #666;
+	overflow: hidden;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#header {
+	height: 126px;
+	width:960px;
+	background: url("/images/header.png") no-repeat left center;
+	margin-top: 20px;
+	
+}
+#slideshow {
+	padding-top:10px;
+	padding-bottom: 10px;
+	height: 202px;
+}
+#main_container {
+	margin-left:0px;
+	margin-right:0px;
+	width: 670px;
+}
+#content {
+	background: #ffffff url("/images/top-shadow.jpg") repeat-x ;
+}
+#breadcrumb {
+	margin-left:10px;
+	margin-top:8px;
+	margin-bottom:8px;
+}
+#main_text {
+	padding-left:10px;
+	padding-right:10px;
+	background: #ffffff;
+}
+#sidebar {
+	margin-left: 0px;
+	margin-right: 0px;
+	width:290px;
+}
+#clients_title {
+	height:30px;
+}
+#clients {
+	background: url("/images/feature/clientback.jpg") no-repeat left center;
+	height:101px;
+}
+#feature {
+	height:230px;
+}
+#footer {
+	background: url("/images/footer.jpg") no-repeat left center;
+	height:36px;
+}
+#sub_footer {
+		color: #dddddd;
+		background:transparent;
+		text-align:center;
+		margin-top: 10px;
+		font-size: 11px;
+}
+/* Menu
+----------------------------------------------------------------------------------------------------*/
+
+.menu_177,
+.menu_87 {
+	font:normal 12px/14px "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color:#ffffff;
+	display:inline;
+	float: left;
+	position: relative;
+	text-align:center;
+	padding-top: 7px;
+	padding-bottom: 9px;
+}
+.menu_177:hover,
+.menu_87:hover {
+	background:url("/images/menu_hover.png");
+	}
+#top-menu {
+	height: 31px;
+	width:960px;
+	background: url("/images/menu_back.jpg") no-repeat left center;
+	
+}
+
+.container_16 .menu_87 {
+	width:87px;
+}
+.container_16 .menu_177 {
+	width:177px;
+}
+/* End of Menu
+----------------------------------------------------------------------------------------------------*/
+.container_16 {
+	background: #fff;
+}
+

@@ -1,0 +1,1 @@
+<img src="<?=base_url()?>images/slideshow/sl1.jpg" width="940px" height="202px">
