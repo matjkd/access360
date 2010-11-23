@@ -25,7 +25,7 @@ h1 {
  font-size: 16px;
  font-weight: bold;
  margin: 24px 0 2px 0;
- padding: 5px 0 6px 0;
+ padding: 5px 0 6px 0;Unable to load the requested class: template
 }
 
 code {
@@ -43,7 +43,7 @@ code {
 </head>
 <body>
 
-<h1>Welcome to CodeIgniter!</h1>
+<h1>Welcome to <?=$config_company_name?></h1>
 
 <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
