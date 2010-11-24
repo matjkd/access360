@@ -29,27 +29,13 @@
 			</div>
 			
 			<div id="main_text">
-			&nbsp;
+			<?=$this->load->view($main_content)?>
 			</div>
 		
 		</div>
 	
 		<div id="sidebar" class="grid_5">
-			<div id="breadcrumb">
-				Latest News
-			</div>
-				
-			<div id="clients_title">
-				<img src="<?=base_url()?>images/sidebarheading.jpg" width="290px" height="30px">
-			</div>
-			
-			<div id="clients">
-			
-			</div>
-			
-			<div id="feature">
-				<img src="<?=base_url()?>images/feature/celebrate.jpg" width="290px" height="230px">
-			</div>
+			<?=$this->load->view('sidebar/main_sidebar')?>
 		</div>
 		<div class="clear">
 		</div>

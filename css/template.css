@@ -69,16 +69,33 @@ p {
 	margin-left:10px;
 	margin-top:8px;
 	margin-bottom:8px;
+	;
 }
 #main_text {
 	padding-left:10px;
 	padding-right:10px;
 	background: #ffffff;
+	min-height:200px;
+	
 }
+/* Sidebar
+----------------------------------------------------------------------------------------------------*/
 #sidebar {
 	margin-left: 0px;
 	margin-right: 0px;
 	width:290px;
+}
+#side_news {
+	padding-top:8px;
+}
+#teaser {
+	float:left;
+	padding-top:5px;
+	width:230px;
+}
+#news_link {
+	float:left;
+	width:50px;
 }
 #clients_title {
 	height:30px;
@@ -90,6 +107,9 @@ p {
 #feature {
 	height:230px;
 }
+
+/* End of Sidebar
+----------------------------------------------------------------------------------------------------*/
 #footer {
 	background: url("/images/footer.jpg") no-repeat left center;
 	height:36px;
@@ -133,6 +153,19 @@ p {
 	width:177px;
 }
 /* End of Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Flash Game
+----------------------------------------------------------------------------------------------------*/
+#turkey {
+	height: 400px;
+	width:550px;
+	padding-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* End of Flash Game
 ----------------------------------------------------------------------------------------------------*/
 .container_16 {
 	background: #fff;

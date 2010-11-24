@@ -1,5 +1,5 @@
 <div id="" class="menu_87">
-<a href="#">home</a>
+<a href="<?=base_url()?>">home</a>
 </div>
 <div id="" class="menu_87">
 <a href="#">overview</a>
@@ -14,7 +14,7 @@
 <a href="#">exhibitions</a>
 </div>
 <div id="" class="menu_177">
-<a href="#">professioanl standards</a>
+<a href="#">professional standards</a>
 </div>
 <div id="" class="menu_87">
 <a href="#">contact</a>

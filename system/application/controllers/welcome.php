@@ -9,6 +9,8 @@ function __construct()
 	
 	function index()
 	{
+		$data['main_content'] = "content/main";
+		$this->load->vars($data);
 		$this->load->view('template');
 	}
 }
