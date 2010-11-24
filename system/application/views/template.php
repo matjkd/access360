@@ -31,7 +31,9 @@
 			<div id="main_text">
 			<?=$this->load->view($main_content)?>
 			</div>
-		
+			
+		<?php if(isset($content)) { $this->load->view('global/strip'); }?>
+			
 		</div>
 	
 		<div id="sidebar" class="grid_5">

@@ -6,7 +6,7 @@
 				</div>
 				
 				<div id="news_link">
-				<img src="<?=base_url()?>images/more.png" width="37px" height="49px">
+				<a class="more_button" href="#">More</a>
 				</div>
 			</div>
 			
@@ -16,10 +16,12 @@
 				
 	<div id="clients_title">
 			<img src="<?=base_url()?>images/sidebarheading.jpg" width="290px" height="30px">
+			<div class="clear">
+			</div>
 	</div>
 			
 	<div id="clients">
-			
+			<?=$this->load->view('slideshow/clients')?>
 	</div>
 			
 	<div id="feature">

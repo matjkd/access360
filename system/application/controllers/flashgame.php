@@ -13,6 +13,13 @@ function __construct()
 		$this->load->vars($data);
 		$this->load->view('template');
 	}
+	function submitscore()
+	{
+		$data['score'] = $this->input->post('time');
+		$data['main_content'] = "flash/turkeyscore";
+		$this->load->vars($data);
+		$this->load->view('template');
+	}
 }
 
 /* End of file flashgame.php */

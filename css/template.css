@@ -4,7 +4,7 @@ body{
 /*	font:normal 16px/24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
 	font-weight: 300;*/
 	font:normal 14px/20px "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	color:#393121;
+	color:#333333;
 	padding: 0px 0 0 0;
 	margin:0px
 }
@@ -37,12 +37,16 @@ h2 {
 	padding: 20px 0 0;
 	text-align: center;
 }
-
+h4 {
+	margin: 10px 0 0 0;
+	font:normal 22px/26px "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-weight:lighter;
+}
 p {
-	border: 1px solid #666;
-	overflow: hidden;
-	padding: 10px 0;
-	text-align: center;
+	
+
+	padding: 0px 0;
+	margin-top: 5px;
 }
 
 #header {
@@ -74,9 +78,17 @@ p {
 #main_text {
 	padding-left:10px;
 	padding-right:10px;
+	padding-top:20px;
 	background: #ffffff;
-	min-height:200px;
+	min-height:275px;
 	
+}
+#strip {
+	padding-left:10px;
+	padding-right:10px;
+}
+.inline_image {
+	margin: 3px;
 }
 /* Sidebar
 ----------------------------------------------------------------------------------------------------*/
@@ -95,14 +107,34 @@ p {
 }
 #news_link {
 	float:left;
-	width:50px;
+	width: 37px;
+	height: 49px;
+}
+a.more_button {
+	background: url("/images/more.png") no-repeat 0 0;
+	width: 37px;
+	height: 49px;
+	display: block;
+	text-indent: -9999px;
+	
+}
+
+a.more_button:hover {
+	background-position: 0 -49px;
+	
 }
 #clients_title {
 	height:30px;
 }
 #clients {
 	background: url("/images/feature/clientback.jpg") no-repeat left center;
-	height:101px;
+	height:91px;
+	padding-top:10px;
+}
+.cycle_clients {
+margin-left:64px;
+
+
 }
 #feature {
 	height:230px;
