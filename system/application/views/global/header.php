@@ -13,3 +13,9 @@
 
 <!-- include Jquery ui --> 
 <script type="text/javascript" src="<?=base_url()?>js/jquery-ui-1.8.6.custom.min.js"></script>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="<?=base_url()?>js/pngfix.js"></script>
+<![endif]-->
+
+</head>

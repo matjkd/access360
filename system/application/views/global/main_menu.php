@@ -1,20 +1,19 @@
-<a href="<?=base_url()?>">
 <div id="" class="menu_87">
-home
+<a href="<?=base_url()?>">home</a>
 </div>
-</a>
 
-<a href="<?=base_url()?>welcome/main/overview">
-<div id="" class="menu_87">
-overview
-</div>
-</a>
 
-<a href="<?=base_url()?>welcome/main/process">
+
 <div id="" class="menu_87">
-the process
+<a href="<?=base_url()?>welcome/main/overview">overview</a>
 </div>
-</a>
+
+
+
+<div id="" class="menu_87">
+<a href="<?=base_url()?>welcome/main/process">the process</a>
+</div>
+
 
 <a href="<?=base_url()?>welcome/main/signage">
 <div id="" class="menu_87">
@@ -22,27 +21,28 @@ signage
 </div>
 </a>
 
-<a href="<?=base_url()?>welcome/main/exhibitions">
-<div id="" class="menu_87">
-exhibitions
-</div>
-</a>
 
-<a href="<?=base_url()?>welcome/main/professional">
+<div id="" class="menu_87">
+<a href="<?=base_url()?>welcome/main/exhibitions">exhibitions</a>
+</div>
+
+
+
 <div id="" class="menu_177">
-professional standards
+<a href="<?=base_url()?>welcome/main/professional">professional standards</a>
 </div>
-</a>
-
-<a href="<?=base_url()?>welcome/main/contact">
-<div id="" class="menu_87">
-contact
-</div>
-</a>
 
 <div id="" class="menu_87">
-&nbsp;
+<a href="<?=base_url()?>news">news</a>
 </div>
+
+
+<div id="" class="menu_87">
+<a href="<?=base_url()?>welcome/main/contact">contact</a>
+</div>
+
+
+
 
 <div id="" class="menu_87">
 &nbsp;
