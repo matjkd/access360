@@ -51,7 +51,7 @@ $referrals = array(
 'Other' => 'Other'
 );
 ?>
-
+<strong>Full Name</strong><br/><?=form_input('full_name', $full_name)?><br/>
 <strong>Initials</strong><br/><?=form_input($data)?><br/>
 <strong>Email Address</strong><br/><?=form_input('email_address', $email_address)?><br/>
 If you do not want to receive future information from Access360 Ltd, please uncheck this box<br/>

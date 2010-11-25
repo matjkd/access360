@@ -1,7 +1,10 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $('.cycle').cycle({
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speedIn:  2500, 
+	    speedOut: 2500, 
+	   timeout:   18000 
 	});
 });
 </script>

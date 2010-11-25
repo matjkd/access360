@@ -40,6 +40,7 @@ function __construct()
 		}
 		$data['email_address'] ='';
     	$data['initials'] ='';
+    	$data['full_name'] ='';
 		
     	$data['main_content'] = "flash/turkeyscore";
 		$this->load->vars($data);
@@ -48,7 +49,7 @@ function __construct()
 	function submit_turkey() 
 	{
 		$this->form_validation->set_rules('email_address', 'email address', 'trim|required');
-		
+		$this->form_validation->set_rules('full_name', 'full name', 'trim|required');
 		$this->form_validation->set_rules('time', 'time', 'trim|required');
 		$this->form_validation->set_rules('initials', 'initials', 'trim|required');
 		
@@ -58,7 +59,7 @@ function __construct()
     	$data['score'] = $this->input->post('time');
     	$data['initials'] = $this->input->post('initials');
 		$data['response'] = "";
-    	
+    	$data['full_name'] =$this->input->post('full_name');;
 		if($this->form_validation->run() == FALSE)
 				{
 					
