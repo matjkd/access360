@@ -15,6 +15,7 @@ function __construct()
 	}
 	function submitscore()
 	{
+		$data['errors'] = validation_errors();
 		$data['score'] = $this->input->post('time');
 		$data['main_content'] = "flash/turkeyscore";
 		$this->load->vars($data);

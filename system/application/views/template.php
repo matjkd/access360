@@ -21,7 +21,7 @@
 	
 	
 	<div id="content" class="container_16">
-	
+	<div id="background_content">
 		<div id="main_container" class="grid_11">
 			
 			<div id="breadcrumb">
@@ -30,9 +30,11 @@
 			
 			<div id="main_text">
 			<?=$this->load->view($main_content)?>
+			
+				<?php if(isset($content)) { $this->load->view('global/strip'); }?>
 			</div>
 			
-		<?php if(isset($content)) { $this->load->view('global/strip'); }?>
+
 			
 		</div>
 	
@@ -41,6 +43,7 @@
 		</div>
 		<div class="clear">
 		</div>
+	</div>
 	</div>
 	
 	                

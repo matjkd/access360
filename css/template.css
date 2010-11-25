@@ -65,13 +65,17 @@ p {
 	margin-left:0px;
 	margin-right:0px;
 	width: 670px;
+	
 }
 #content {
-	background: #ffffff url("/images/top-shadow.jpg") repeat-x ;
+	background: #dcdddf url("/images/top-shadow.jpg") repeat-x ;
+}
+#background_content {
+	background: url("/images/bottom_back.png") no-repeat bottom 0px;
 }
 #breadcrumb {
 	margin-left:10px;
-	margin-top:8px;
+	margin-top:6px;
 	margin-bottom:8px;
 	;
 }
@@ -80,12 +84,11 @@ p {
 	padding-right:10px;
 	padding-top:20px;
 	background: #ffffff;
-	min-height:275px;
+	min-height:384px;
 	
 }
 #strip {
-	padding-left:10px;
-	padding-right:10px;
+	padding-bottom:5px;
 }
 .inline_image {
 	margin-top: 10px;
