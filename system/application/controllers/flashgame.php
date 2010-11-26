@@ -62,14 +62,16 @@ function __construct()
 		$this->form_validation->set_rules('time', 'time', 'trim|required');
 		$this->form_validation->set_rules('initials', 'initials', 'trim|required');
 		
-	$data['latest_news'] = $this->content_model->latest_news();
+	
     	$data['email_address'] = $this->input->post('email_address');
     	$data['request_info'] = $this->input->post('request_info');
     	$data['score'] = $this->input->post('time');
     	$data['initials'] = $this->input->post('initials');
 		$data['response'] = "";
     	$data['full_name'] =$this->input->post('full_name');;
-		if($this->form_validation->run() == FALSE)
+		
+    	$data['latest_news'] = $this->content_model->latest_news();
+    	if($this->form_validation->run() == FALSE)
 				{
 					
 					
