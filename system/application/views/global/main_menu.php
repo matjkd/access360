@@ -38,7 +38,7 @@ signage
 
 
 <div id="" class="menu_87">
-<a href="<?=base_url()?>welcome/main/contact">contact</a>
+<a href="<?=base_url()?>contact">contact</a>
 </div>
 
 

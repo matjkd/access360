@@ -6,13 +6,21 @@ function __construct()
 	{
 		parent::__construct();
 		$this->load->model('game_model');
+                $this->load->model('content_model');
+               
+                
 	}
 	
 	function index()
 	{
 		$data['main_content'] = "flash/turkey";
-		$this->load->vars($data);
+		$data['latest_news'] = $this->content_model->latest_news();
+                $data['breadcrumb'] = "flashgame";
+                $data['top_ten'] = $this->game_model->turkey_scores();
+                $data['sidebar1'] = "flash/scoreboard";
+                $this->load->vars($data);
 		$this->load->view('template');
+
 	}
 	function submitscore()
 	{
@@ -41,8 +49,9 @@ function __construct()
 		$data['email_address'] ='';
     	$data['initials'] ='';
     	$data['full_name'] ='';
-		
+	$data['latest_news'] = $this->content_model->latest_news();
     	$data['main_content'] = "flash/turkeyscore";
+        $data['top_ten'] = $this->game_model->turkey_scores();
 		$this->load->vars($data);
 		$this->load->view('template');
 	}
@@ -53,7 +62,7 @@ function __construct()
 		$this->form_validation->set_rules('time', 'time', 'trim|required');
 		$this->form_validation->set_rules('initials', 'initials', 'trim|required');
 		
-		
+	$data['latest_news'] = $this->content_model->latest_news();
     	$data['email_address'] = $this->input->post('email_address');
     	$data['request_info'] = $this->input->post('request_info');
     	$data['score'] = $this->input->post('time');
@@ -85,6 +94,7 @@ function __construct()
 	{
 		$data['top_ten'] = $this->game_model->turkey_scores();
 		$data['main_content'] = "flash/scoreboard";
+                $data['latest_news'] = $this->content_model->latest_news();
 		$this->load->vars($data);
 		$this->load->view('template');
 	}
