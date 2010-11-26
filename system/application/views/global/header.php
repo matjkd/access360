@@ -3,6 +3,7 @@
 <title><?=$config_company_name?></title> 
 <link rel="stylesheet" href="<?=base_url()?>css/custom-theme/jquery-ui-1.8.6.custom.css" /> 
 <link rel="stylesheet" href="<?=base_url()?>css/960.css" /> 
+<link rel="stylesheet" href="<?=base_url()?>css/prettyPhoto.css" /> 
 <link rel="stylesheet" href="<?=base_url()?>css/template.css" /> 
 
 <!-- include jQuery library -->
@@ -13,6 +14,12 @@
 
 <!-- include Jquery ui --> 
 <script type="text/javascript" src="<?=base_url()?>js/jquery-ui-1.8.6.custom.min.js"></script>
+
+<!-- include Pretty Photo --> 
+<script type="text/javascript" src="<?=base_url()?>js/jquery.prettyPhoto.js"></script>
+
+<!-- include FLIR -->
+<script src="<?=base_url()?>facelift/flir.js" type="text/javascript"></script>  
 
 <!--[if lt IE 7.]>
 <script defer type="text/javascript" src="<?=base_url()?>js/pngfix.js"></script>

@@ -5,4 +5,6 @@
 						<img src="<?=base_url()?>images/strips/<?=$row->image_strip?>">
 		</div>
 <?php  }?>
+
+
 <?php  endforeach; ?>

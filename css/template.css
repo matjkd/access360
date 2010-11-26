@@ -28,9 +28,11 @@ a:hover {
 }
 
 h1 {
-	font-family: Georgia, serif;
+	font:normal 30px/36px "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-weight: normal;
-	text-align: center;
+	color:#000000;
+	margin:0px;
+	
 }
 
 h2 {
@@ -95,6 +97,13 @@ p {
 	margin-top: 10px;
 	margin-right:10px;
 	margin-left: -10px;
+}
+
+.news_image {
+	margin-top: 10px;
+	margin-right:10px;
+	margin-left: 0px;
+	margin-bottom: 10px;
 }
 /* Sidebar
 ----------------------------------------------------------------------------------------------------*/

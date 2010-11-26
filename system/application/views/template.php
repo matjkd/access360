@@ -49,7 +49,8 @@
 			<div id="main_text">
 			<?=$this->load->view($main_content)?>
 			
-				<?php if(isset($content)) { $this->load->view('global/strip'); }?>
+			<?php if(isset($content)) { $this->load->view('global/strip'); }?>
+			
 			</div>
 			
 
@@ -82,6 +83,10 @@
 		</div>
 	</div>
  </div> 
-           
+ <script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+	</script>          
 </body>
 </html>

@@ -18,4 +18,27 @@ class Content_model extends Model {
 			}
 		
 	}
+	
+	function get_all_news()
+	{
+			
+		$this->db->where('content_type', 'news');
+		$query = $this->db->get('content');
+		if($query->num_rows > 0);
+			{
+				return $query->result();
+			}
+		
+	}
+	function get_news($id)
+	{
+			
+		$this->db->where('content_id', $id);
+		$query = $this->db->get('content');
+		if($query->num_rows > 0);
+			{
+				return $query->result();
+			}
+		
+	}
 }
