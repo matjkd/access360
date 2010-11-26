@@ -26,6 +26,7 @@ function __construct()
 			}
 		$data['main_content'] = "content/main";
 		$data['content'] = $this->content_model->get_content($data['menu']);
+		$data['latest_news'] = $this->content_model->latest_news();
 		$this->load->vars($data);
 		$this->load->view('template');
 	}

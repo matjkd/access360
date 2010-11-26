@@ -33,12 +33,22 @@ class Content_model extends Model {
 	function get_news($id)
 	{
 			
-		$this->db->where('content_id', $id);
+		$this->db->where('menu', $id);
 		$query = $this->db->get('content');
 		if($query->num_rows > 0);
 			{
 				return $query->result();
 			}
 		
+	}
+	function latest_news()
+	{
+	$this->db->where('content_type', 'news');
+	$this->db->limit(1);
+		$query = $this->db->get('content');
+		if($query->num_rows == 1);
+			{
+				return $query->result();
+			}
 	}
 }

@@ -1,4 +1,4 @@
-<?php foreach($news_content as $row): ?>
+<?php foreach($content as $row): ?>
 <h1><?=$row->title?></h1>
 <?php if(isset($row->news_image)) {?>
 		<div id="strip">

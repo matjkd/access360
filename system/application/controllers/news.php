@@ -25,7 +25,9 @@ function __construct()
 				$data['menu'] = 'home';	
 			}
 		$data['main_content'] = "content/news";
-		$data['content'] = $this->content_model->get_all_news();
+		$data['news_content'] = $this->content_model->get_all_news();
+		$data['latest_news'] = $this->content_model->latest_news();
+		$data['breadcrumb'] = "news";
 		$this->load->vars($data);
 		$this->load->view('template');
 	}
@@ -40,8 +42,10 @@ function __construct()
 			{
 				$data['menu'] = 'home';	
 			}
-		$data['main_content'] = "content/news";
+		$data['main_content'] = "content/news_item";
 		$data['content'] = $this->content_model->get_news($segment_active);
+		$data['latest_news'] = $this->content_model->latest_news();
+		$data['breadcrumb'] = "news";
 		$this->load->vars($data);
 		$this->load->view('template');
 	}

@@ -39,13 +39,14 @@ define('HBOUNDS_TEXT', 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]{}
 
 // Each font you want to use should have an entry in the fonts array.
 $fonts = array();
+$fonts['helveticalt'] 	= 'HelveticaNeueLTPro-ThEx.otf';
 $fonts['illuminating'] 	= 'ArtOfIlluminating.ttf';
 $fonts['okolaks'] 		= 'okolaksBold.ttf';
 $fonts['wanta'] 			= 'wanta_091.ttf';
 
 
 // The font will default to the following (put your most common font here).
-$fonts['default'] 		= $fonts['okolaks'];
+$fonts['default'] 		= $fonts['helveticalt'];
 
 /*
 // You can now setup collections of fonts that will be automatically detected and used if the proper CSS conditions are met.

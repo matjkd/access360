@@ -10,7 +10,7 @@
       <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
       <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
         <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>You are using an outdated browser</div>
-        <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>For a better experience using this site, please upgrade to a modern web browser.</div>
+        <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>For a better and safer experience using the internet, please upgrade to a modern web browser.</div>
       </div>
       <div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
       <div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
@@ -43,7 +43,7 @@
 		<div id="main_container" class="grid_11">
 			
 			<div id="breadcrumb">
-				YOU ARE HERE:
+				YOU ARE HERE: <?=$this->load->view('global/breadcrumb')?> 
 			</div>
 			
 			<div id="main_text">
@@ -83,10 +83,34 @@
 		</div>
 	</div>
  </div> 
- <script type="text/javascript" charset="utf-8">
+<!--[if !IE]><!-->
+<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
 			$("a[rel^='prettyPhoto']").prettyPhoto();
 		});
-	</script>          
+
+		 FLIR.init();  
+		 FLIR.auto([ 'h1', 'h3']);  
+</script>   
+<!-- <![endif]--> 
+
+<!--[if gte IE 7]>
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+
+		
+</script> 
+<![endif]-->
+
+<!--[if gte IE 8]>
+<script type="text/javascript" charset="utf-8">
+	
+		 FLIR.init();  
+		 FLIR.auto([ 'h1', 'h3']);  
+</script> 
+<![endif]--> 
+	   
 </body>
 </html>
