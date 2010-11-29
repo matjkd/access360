@@ -89,8 +89,8 @@
 			$("a[rel^='prettyPhoto']").prettyPhoto();
 		});
 
-		 FLIR.init();  
-		 FLIR.auto([ 'h1', 'h3']);  
+		FLIR.init( { path: '/facelift/' } );
+		FLIR.auto([ 'h1', 'h3']);  
 </script>   
 <!-- <![endif]--> 
 
@@ -112,14 +112,7 @@
 </script> 
 <![endif]--> 
 
-<script type="text/javascript">
 
-var str="Access360";
-str=str + "We are proud to announce that Microsoft has ";
-str=str + "one of the largest Web Developers sites in the world.";
-document.write(str.replace(/microsoft/gi, "W3Schools"));
-
-</script>
 	   
 </body>
 </html>
