@@ -2,10 +2,13 @@
 <h4>Top Ten</h4>
 <?php $x = 0; ?>
 <?php foreach($top_ten as $row):?>
-<?php $x = $x + 1; ?>
+<?php 
+$x = $x + 1; 
+$initials = strtoupper($row->initials);
+?>
 <div id="number"><?=$x?>.</div>
 
-<div id="scoreInitials"><?=$row->initials?> </div>
+<div id="scoreInitials"><?=$initials?> </div>
 
 <div id="time">............. <?=$row->time?></div><br/>
 
