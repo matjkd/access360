@@ -195,7 +195,7 @@ margin-left:64px;
 }
 .menu_177:hover,
 .menu_87:hover {
-	background:url("/images/menu_hover.png");
+	
 	}
 #top-menu {
 	height: 31px;
@@ -240,7 +240,8 @@ ul#topnav a, ul#topnav span { /*--The <a> and <span> share the same properties s
 	line-height: 20px; /*--Vertical alignment of text--*/
 }
 ul#topnav a{ /*--This is basically the hover state of navigation--*/
-	color: #ffffff;
+	color: #fff;
+	background:url("/images/menu_hover.png");
 	background-position: left bottom;
 }
 ul#topnav span{ /*--Default state of navigation--*/
