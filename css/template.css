@@ -232,16 +232,16 @@ ul#topnav a, ul#topnav span { /*--The <a> and <span> share the same properties s
 	float: left;
 	text-decoration: none;
 	color: #fff;
-	background: url(a_bg.gif) repeat-x;
 	text-transform: lowercase;
 	clear: both;
 	width: 100%;
-	height: 20px;
-	line-height: 20px; /*--Vertical alignment of text--*/
+	height: 21px;
+	line-height: 21px; /*--Vertical alignment of text--*/
 }
 ul#topnav a{ /*--This is basically the hover state of navigation--*/
 	color: #fff;
 	background:url("/images/menu_hover.png");
+
 	background-position: left bottom;
 }
 ul#topnav span{ /*--Default state of navigation--*/
