@@ -23,6 +23,7 @@ class Content_model extends Model {
 	{
 			
 		$this->db->where('content_type', 'news');
+		$this->db->orderby('content_id', 'desc');
 		$query = $this->db->get('content');
 		if($query->num_rows > 0);
 			{
@@ -44,6 +45,7 @@ class Content_model extends Model {
 	function latest_news()
 	{
 	$this->db->where('content_type', 'news');
+	$this->db->orderby('content_id', 'desc');
 	$this->db->limit(1);
 		$query = $this->db->get('content');
 		if($query->num_rows == 1);
