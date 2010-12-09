@@ -1,4 +1,5 @@
-<head> 
+<head>
+<meta name="google-site-verification" content="cMclCgeUzDBZSp85qJCSVMfP2IYNrnQPOxAo8krYetE" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 <title><?=$config_company_name?></title> 
 <link rel="stylesheet" href="<?=base_url()?>css/custom-theme/jquery-ui-1.8.6.custom.css" /> 
