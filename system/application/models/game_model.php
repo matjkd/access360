@@ -17,7 +17,8 @@ class Game_model extends Model {
 	    				'time' => $this->input->post('time'),
 	    				'initials' => $this->input->post('initials'),
 	    				'request_info' => $this->input->post('request_info'),
-	    				'date_added' => time(),
+    					'full_name' => $this->input->post('full_name'),
+	    				'date_added' => time()
 	    				);
 	  $insert = $this->db->insert('turkey', $score_data);
 		return $insert;

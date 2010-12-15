@@ -195,7 +195,7 @@ margin-left:64px;
 }
 .menu_177:hover,
 .menu_87:hover {
-	background:url("/images/menu_hover.png");
+	
 	}
 #top-menu {
 	height: 31px;
@@ -211,6 +211,41 @@ margin-left:64px;
 }
 .container_16 .menu_177 {
 	width:177px;
+}
+
+ul#topnav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font-size: 1.1em;
+}
+ul#topnav li{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;  /*--Important - Masking out the hover state by default--*/
+	float: left;
+	height:31px;
+}
+ul#topnav a, ul#topnav span { /*--The <a> and <span> share the same properties since the <span>  will be a duplicate of the <a> tag--*/
+	padding: 5px 0px;
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	text-transform: lowercase;
+	clear: both;
+	width: 100%;
+	height: 21px;
+	line-height: 21px; /*--Vertical alignment of text--*/
+}
+ul#topnav a{ /*--This is basically the hover state of navigation--*/
+	color: #fff;
+	background:url("/images/menu_hover.png");
+
+	background-position: left bottom;
+}
+ul#topnav span{ /*--Default state of navigation--*/
+	background-position: left top;
 }
 /* End of Menu
 ----------------------------------------------------------------------------------------------------*/
