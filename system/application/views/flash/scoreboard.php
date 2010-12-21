@@ -14,3 +14,5 @@ $initials = strtoupper($row->initials);
 
 <?php endforeach;?>
 </div>
+
+ <div style="padding:10px;">The competition is now over, but you can now play for fun!</div>
