@@ -17,7 +17,7 @@ else
 
 ?>
 
-    <a href="<?=base_url()?>flashgame"><img alt="turkey game"  src="<?=base_url()?>images/feature/Access360_Game_Insert.jpg"></a>
+    <img alt="touch screens"  src="<?=base_url()?>images/feature/touchscreen.jpg"></a>
 
 <?php
 }
